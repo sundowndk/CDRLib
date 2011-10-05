@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDRLib", "CDRLib\CDRLib.csproj", "{B1FA9678-2BFA-400A-90BF-BB83DCC86462}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{CF34ADB4-6348-4A85-BB93-9B264B67E9A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDRTool", "CDRTool\CDRTool.csproj", "{C8A2B98B-DC0A-4535-99A5-7B61F6F3D2B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDRDaemon", "CDRDaemon\CDRDaemon.csproj", "{44F41E3D-97E7-476E-BF29-2A3EF64F826E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44F41E3D-97E7-476E-BF29-2A3EF64F826E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F41E3D-97E7-476E-BF29-2A3EF64F826E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FA9678-2BFA-400A-90BF-BB83DCC86462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FA9678-2BFA-400A-90BF-BB83DCC86462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FA9678-2BFA-400A-90BF-BB83DCC86462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FA9678-2BFA-400A-90BF-BB83DCC86462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A2B98B-DC0A-4535-99A5-7B61F6F3D2B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A2B98B-DC0A-4535-99A5-7B61F6F3D2B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF34ADB4-6348-4A85-BB93-9B264B67E9A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF34ADB4-6348-4A85-BB93-9B264B67E9A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF34ADB4-6348-4A85-BB93-9B264B67E9A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = CDRDaemon\CDRDaemon.csproj
+	EndGlobalSection
+EndGlobal

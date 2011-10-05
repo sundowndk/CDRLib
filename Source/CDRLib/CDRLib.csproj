@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B1FA9678-2BFA-400A-90BF-BB83DCC86462}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CDRLib</RootNamespace>
+    <AssemblyName>CDRLib</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Binary\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Binary\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Toolbox, Version=1.0.4210.13080, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Toolbox.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CDRLib\Customer.cs" />
+    <Compile Include="CDRLib.Strings\Exception.cs" />
+    <Compile Include="CDRLib\Runtime.cs" />
+    <Compile Include="CDRLib\Subscription.cs" />
+    <Compile Include="CDRLib\SIPAccount.cs" />
+    <Compile Include="CDRLib.Enums\Weekday.cs" />
+    <Compile Include="CDRLib\Range.cs" />
+    <Compile Include="CDRLib\RangePrice.cs" />
+    <Compile Include="CDRLib\RangeGroup.cs" />
+    <Compile Include="CDRLib\CountryCode.cs" />
+    <Compile Include="CDRLib\Usage.cs" />
+    <Compile Include="CDRLib.Enums\RangeType.cs" />
+    <Compile Include="CDRLib.Enums\UsageDirection.cs" />
+    <Compile Include="CDRLib\RangePriceGroup.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="CDRLib\" />
+    <Folder Include="CDRLib.Strings\" />
+    <Folder Include="CDRLib.Enums\" />
+  </ItemGroup>
+</Project>
